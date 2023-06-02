@@ -1,0 +1,265 @@
+*{
+    background-color: #f3fef8;
+}
+
+  
+.game{
+    width: 200px;
+    height: 400px;
+    background-color: #FBF5E5;
+    
+    border: 4px solid #EFE6C9;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    transform: scale(1.5, 1.5);
+}
+.next{
+    width: 90px;
+    height: 90px;
+    padding: 8px;
+    background-color: #FBF5E5;
+    border: 4px solid #EFE6C9;
+    
+    position: absolute;
+    top: 320px;
+    left: 840px;
+    transform: scale(1.5, 1.5);
+}
+.info{
+    width: 90px;
+    height: 90px;
+    background-color: #FBF5E5;
+    border: 4px solid #EFE6C9;
+    position: absolute;
+    top: 90px;
+    left: 840px;
+    transform: scale(1.5, 1.5);
+    font-family: fongsong;
+    font-size: 17px;
+}
+.none,.current,.done{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    box-sizing: border-box;
+    /* background-color: #d12133; */
+}
+.none{
+    background-color: #FBF5E5;
+}
+/* .current{
+    background-color: #aacaed;
+    border: 1px solid #77b0ee;
+} */
+
+  
+.current{
+    background-color: #9DC3DE;
+    border: 1px solid #8d5783;
+}
+.done{
+    background-color: #a8d29f;
+    border:1px solid #a4d898;
+}
+
+#button{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 510px;
+    top:700px;
+    background-color: #f3fef8;
+    transform: scale(1.5, 1.5);
+}
+
+#gongneng
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 810px;
+    top:730px;
+    background-color: #f3fef8;
+    transform: scale(1.5, 1.5);
+}
+
+#gongneng button{
+    width: 77px;
+    height: 77px;
+}
+
+#gongneng1
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 830px;
+    top:610px;
+    background-color: #f3fef8;
+    transform: scale(1.5, 1.5);
+}
+
+#gongneng1 button{
+    width: 55px;
+    height: 40px;
+    border-radius:20%;
+}
+
+#gongneng2
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 830px;
+    top:520px;
+    background-color: #f3fef8;
+    transform: scale(1.5, 1.5);
+}
+
+#gongneng2 button{
+    width: 70px;
+    height: 40px;
+    border-radius:20%;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: hwb(45 87% 0%);
+    border: 3px solid #9DC3DE;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+li{
+display: inline-block;
+}
+@media screen and (max-width: 768px){
+    .game{
+        width: 200px;
+        height: 400px;
+        background-color: #FBF5E5;
+    
+        border: 4px solid #EFE6C9;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        transform: scale(1, 1);
+    }
+    .next{
+        width: 80px;
+        height: 80px;
+        background-color: #FBF5E5;
+        border: 4px solid #EFE6C9;
+        position: absolute;
+        /* top: 10px;
+        left: 250px; */
+        
+        top: 160px;
+        left: 250px;
+        transform: scale(1, 1);
+    }
+    .info{
+        width:100px;
+        height: 100px;
+        position: absolute;
+        /* top: 130px;
+        left: 250px; */
+        top: 10px;
+        left: 250px;
+        transform: scale(1, 1);
+         background-color: #FBF5E5;
+        border: 4px solid #EFE6C9;
+        
+    }
+    .none,.current,.done{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        box-sizing: border-box;
+    }
+    .none{
+        background-color: #FBF5E5;
+    }
+    .current{
+       background-color: #aacaed;
+    border: 1px solid #000000;
+    }
+    .done{
+        background-color: #a8d29f;
+        border:1px solid #a4d898;
+    }
+
+    #button{
+        position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50px;
+    top:490px;
+    background-color: #f3fef8;
+    transform: scale(1.5, 1.5);
+    }
+
+    #gongneng
+{
+    /* position: absolute; */
+    width: 60px;
+    height: 60px;
+    left: 280px;
+    top:530px;
+    background-color: #f3fef8;
+    transform: scale(1.5, 1.5);
+}
+
+#gongneng button{
+    width: 77px;
+    height: 77px;
+}
+
+#gongneng1
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 280px;
+    top:400px;
+    background-color: #f3fef8;
+    transform: scale(1.5, 1.5);
+}
+
+#gongneng1 button{
+    width: 55px;
+    height: 40px;
+    border-radius:20%;
+}
+
+#gongneng2
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 280px;
+    top:300px;
+    background-color: #f3fef8;
+    transform: scale(1.5, 1.5);
+}
+
+#gongneng2 button{
+    width: 70px;
+    height: 40px;
+    border-radius:20%;
+}
+
+
+    button{
+        width: 30px;
+        height: 30px;
+    }
+    li{
+        display: inline-block;
+    }
+}

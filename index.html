@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function randomColor() {
+     // 生成一个0到255之间的随机整数
+     var r = Math.floor(Math.random() * 256);
+     // 生成一个0到255之间的随机整数
+     var g = Math.floor(Math.random() * 256);
+     // 生成一个0到255之间的随机整数
+    var b = Math.floor(Math.random() * 256);
+     // 将三个数字组合成一个RGB颜色值
+    var color = "rgb(" + r + "," + g + "," + b + ")";
+    // 返回颜色值
+    return color;
+}  
+    </script>
+    <style>
+    .current{
+      background-color: #aacaed;
+        border: 1px solid #77b0ee;
+    }
+      </style>
+</head>
+<body>
+<div id="game" class="game"></div>
+<div id="next" class="next"></div>
+<div id="button" style="position: relative;">
+        <button  class="top" style="width: 53px;height: 53px; position: absolute;left: 48px;top: 1px;">^</button>
+        <button  class="left" style="width: 53px;height: 53px;position: absolute;left: 4px;top: 45px;"> <   </button>
+        <button  class="down" style="width: 53px;height: 53px;position: absolute;left: 48px;top: 90px; "> v </button>
+        <button  class="right" style="width: 53px;height: 53px;position: absolute;right: 6px;top: 45px; "> > </button>      
+</div>
+
+<div id="gongneng">   
+    <button  class="fal">Fall</button><br><br>
+</div>
+
+<div id="gongneng1">   
+    <button  id="chong" style="font-size: 14px;">Again</button>
+</div>
+
+<div id="gongneng2">   
+    <button  id="play-button" style="font-size: 14px;">Mute</button>
+</div>
+
+<div class="info" style="padding: 8px;">
+    Time  &nbsp;<span id="time">0s</span><br><br><br>
+    score  &nbsp;<span id="score">0</span>
+</div>
+
+<script src="suqar.js"></script>
+<script src="all squar.js"></script>
+<script src="game.js"></script>
+<script src="Local.js"></script>
+<script src="script.js"></script>
+<script src="lizi.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"
+    integrity="sha512-jduERlz7En1IUZR54bqzpNI64AbffZWR//KJgF71SJ8D8/liKFZ+s1RxmUmB+bhCnIfzebdZsULwOrbVB5f3nQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    var local=new Local();
+    document.getElementById("chong").onclick=function (){
+        local.start();
+    }
+    local.start();
+</script>
+</body>
+</html>
